@@ -1,0 +1,17 @@
+---
+Language: Cpp
+BasedOnStyle: Google
+AccessModifierOffset: -2
+AlignAfterOpenBracket: AlwaysBreak
+AlignOperands: false
+AlignTrailingComments: true
+AllowShortIfStatementsOnASingleLine: false
+AllowShortFunctionsOnASingleLine: All
+BreakBeforeBinaryOperators: NonAssignment
+BinPackParameters: false
+BinPackArguments: false
+DerivePointerAlignment: false
+SpacesBeforeTrailingComments: 2
+ContinuationIndentWidth: 2
+KeepEmptyLinesAtTheStartOfBlocks: true
+PointerAlignment: Right

@@ -1,0 +1,9 @@
+# Common flags: https://blog.aspect.dev/bazelrc-flags
+startup --host_jvm_args=-DBAZEL_TRACK_SOURCE_DIRECTORIES=1
+build --incompatible_strict_action_env --nolegacy_external_runfiles --experimental_remote_merkle_tree_cache --experimental_remote_merkle_tree_cache_size=1000 --heap_dump_on_oom --noexperimental_check_output_files --experimental_reuse_sandbox_directories
+
+# Enable the disk cache.
+build --disk_cache=/tmp/bazel_local_cache_cv --incompatible_remote_results_ignore_disk --experimental_guard_against_concurrent_changes
+
+# Build with c++20: https://stackoverflow.com/a/71069088
+build --cxxopt=-std=c++20
